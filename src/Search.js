@@ -2,7 +2,12 @@ import React from 'react'
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <div className='topBar'>
+        <form>
+            <label>What are you looking for?</label>
+            <input />
+        </form>
+    </div>
   )
 }
 
