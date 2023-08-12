@@ -14,7 +14,7 @@ function App() {
         query:term
       }
     })
-    return response
+    return response.data.results
   }
 
   const handleSubmit = (term) => {
