@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({ search }) => {
+
+  const handleFormSubmit = ( event ) => {
+    event.preventDefault()
+    search('serhat')
+  }
   return (
     <div className='topBar'>
-        <form>
+        <form onSubmit={handleFormSubmit}>
             <label>What are you looking for?</label>
             <input />
         </form>
